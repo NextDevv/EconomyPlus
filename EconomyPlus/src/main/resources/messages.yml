@@ -1,0 +1,92 @@
+#|------------------------------|
+#|          MESSAGES            |
+#|------------------------------|
+
+# Available keywords
+# |------------------------------|
+# %player% -> The sender of this message.
+# %target% -> The target of this message.
+# %prefix% -> The prefix of this plugin.
+# %color-prefix% -> The color prefix of this plugin.
+# %command% -> The command of the message that is executed.
+# %time% -> The current time of the message that is executed.
+# %balance% -> The current balance of the player
+# %target-balance% -> The current balance of the target
+# %amount% -> The amount of the message that is executed
+# |------------------------------|
+
+# GENERAL
+# |------------------------------|
+no-target: "%prefix%Il giocatore %target% non è stato trovato"
+number-format-exception: "%prefix%Il numero dato non è valido"
+
+# COMMANDS
+# |------------------------------|
+command-not-player: "%prefix%Devi essere un giocatore per eseguire questo comando!"
+command-lack-of-permission: "%prefix%Non hai il permesso per eseguire questo comando!"
+
+# Max number of lines 10 - normal
+# Max number of lines 10 - op
+balance:
+    line-1: "&8----------- &f[&fEconomy &e&lPlus&f] &8-----------"
+    line-2: " &8↳ %color-prefix%/balance &fpay &8|&f Paga un giocatore"
+    line-3: " &8↳ %color-prefix%/balance &fshow &8|&f Vedi il bilancio di un giocatore"
+    line-4: " &8↳ %color-prefix%/balance &ftop &8|&f Vedi i top giocatori"
+
+    line-1-op: " &8↳ %color-prefix%/balance&f give &8|&f Aggiunge soldi a un giocatore"
+    line-2-op: " &8↳ %color-prefix%/balance&f withdraw &8|&f Toglie soldi da un giocatore"
+    line-3-op: " &8↳ %color-prefix%/balance&f set &8|&f Setta il bilancio di un giocatore"
+    line-4-op: " &8↳ %color-prefix%/balance&f reload &8|&f Ricarica il file di configurazione"
+
+# PAYCHECK
+# |------------------------------|
+paycheck: "%prefix%Ti sono stati aggiunti %color-prefix%$%amount%&f per essere attivo"
+
+# RELOAD
+# |------------------------------|
+reload: "%prefix%File di configurazione ricaricato!"
+
+
+# PAY
+# |------------------------------|
+pay-success: "%prefix%I soldi sono stati inviati con successo a %color-prefix%%target%"
+pay-failure: "%prefix%Non poi inviare soldi a te stesso!"
+pay-receiver: "%prefix%%color-prefix%%player%&f ti ha inviato %color-prefix%$%amount%"
+
+pay-usage: "%prefix%%color-prefix%/balance&f pay <player> <amount>"
+
+# SHOW
+# |------------------------------|
+show-success: "%prefix%Il bilancio di %color-prefix%%target%&f è di %color-prefix%%target-balance%"
+show-self: "%prefix%Il tuo bilancio è di %color-prefix%%balance%"
+
+show-usage: "%prefix%%color-prefix%/balance&f show <player> &8| %color-prefix%/balance&f show"
+
+# TOP
+# |------------------------------|
+top:
+    title: "&8------------ %color-prefix%TOP &fBALANCE &8------------"
+    format: "&8[%color-prefix%%i%&8] %color-prefix%%player%&f: &a$&f%amount%"
+    footer: "&8------------------------------------------------------"
+    player-position: "La tua posizione è %color-prefix%%i%&f!"
+
+# GIVE
+# |------------------------------|
+give-success: "%prefix%I soldi sono stati aggiunti con successo"
+give-target: "%prefix%%color-prefix%%player%&f ti ha aggiunto %amount%"
+
+give-usage: "%prefix%%color-prefix%/balance&f give <player> <amount>"
+
+# WITHDRAW
+# |------------------------------|
+withdraw-success: "%prefix%I soldi sono stati rimossi con successo"
+withdraw-target: "%prefix%%color-prefix%%player%&f ti ha tolto %amount%"
+
+withdraw-usage: "%prefix%%color-prefix%/balance&f withdraw <player> <amount>"
+
+# SET
+# |------------------------------|
+set-success: "%prefix%I soldi sono stati settati con successo"
+set-target: "%prefix%%color-prefix%%player%&f ti ha settato il conto a %amount%"
+
+set-usage: "%prefix%%color-prefix%/balance&f set <player> <amount>"

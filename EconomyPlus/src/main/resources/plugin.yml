@@ -1,0 +1,7 @@
+name: EconomyPlus
+version: '1.0-SNAPSHOT'
+main: sharppvp.plugins.economyplus.EconomyPlus
+authors: [SpreestDev]
+commands:
+    balance:
+        usage: /<command>

@@ -1,0 +1,28 @@
+#| ___                                ___   _                |
+#|  | __|  __ ___ _ _  ___ _ __ _  _   | _ \ | |  _  _   ___ |
+#|  | _|  / _/ _ | ' \/ _ | '  | || |  |  _/ | | | || | (_-< |
+#|  |___| \__\___|_||_\___|_|_|_\_, |  |_|   |_|  \_,_| /__/ |
+#|                              |__/                         |
+#|                      By SPREESTDEV                        |
+#|___________________________________________________________|
+
+#DECORATION
+#|------------------------------|
+prefix: "&fEconomy &e&lPlus&f&l+ &8»&f "
+color-prefix: "&e"
+
+#DATABASE OPTIONS
+#|------------------------------|
+host: "sql1.revivenode.com:3306"
+name: "s16337_HiddenChests"
+user: "u16337_NHjun5v66k"
+password: "4tINWb43fMdCer8b^@E7d.!!"
+
+#BASIC OPTIONS
+#|------------------------------|
+initial-balance: 1000
+max-balance: 9223372036854775807
+
+pay-check: on
+pay-check-interval: 30 # In minutes
+pay-check-amount: 500
